@@ -423,7 +423,7 @@ body {
 }
 
 .pricing-card {
-    background: rgba(255, 255, 255, 0.15); 
+    background: rgba(255, 255, 255, 0.15);
     border-radius: 0;
     overflow: hidden;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
@@ -431,25 +431,16 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .pricing-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-    background: rgba(255, 255, 255, 0.25);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.pricing-card-highlighted {
-    transform: scale(1.05);
     background: rgba(70, 48, 72, 1);
-    border: 2px solid rgba(141, 129, 172, 0.4);
-    backdrop-filter: blur(15px);
-}
-
-.pricing-card-highlighted:hover {
-    transform: scale(1.05) translateY(-10px);
-    background: rgba(141, 129, 172, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .pricing-header {
@@ -466,7 +457,10 @@ body {
     padding: 40px 20px;
     text-align: center;
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 0; 
+    border-radius: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column; 
 }
 
 .price {
@@ -497,6 +491,7 @@ body {
 .plan-features {
     list-style: none;
     margin-bottom: 40px;
+    flex-grow: 1;
 }
 
 .plan-features li {
